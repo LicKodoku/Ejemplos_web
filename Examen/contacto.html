@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.php">
+                    <img src="IMG/iso.png">      <!--  El logo actúa como botón de inicio -->
+                </a>
+            </div>    
+        </nav>
+
+        <section class="contacto-container">
+
+            <h1 style="color: white;">Contáctanos</h1>
+
+            <p style="color: white;">Si tienes alguna duda o consulta, completa el formulario o contáctanos directamente.</p>
+
+            <div class="contacto-content">
+
+                <form class="contacto-form">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" placeholder="tuemail@example.com" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+
+                </form>
+
+                <div class="contacto-info">
+
+                    <h2>Información de contacto</h2>
+                    <p><strong>Teléfono:</strong> +52 55 1234 5678</p>
+                    <p><strong>Correo:</strong> correo@correo.com</p>
+                    <p><strong>Dirección:</strong> Av. ola 123, CDMX, México</p>
+                    
+                    <h2>Encuéntranos aquí</h2>
+
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3136440089136!2d-99.13611168468408!3d19.43260778688651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92f22e5e5f5%3A0x68e2e5b18b52e2c1!2sCiudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1614979185375!5m2!1ses!2smx" 
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <ul>
+
+                <li><a href="#">Condiciones de compra y contratación</a></li>
+                <li><a href="#">Aviso legal y políticas de privacidad</a></li>
+
+            </ul>
+
+            <p>&copy; 2025 - Todos los derechos reservados</p>
+
+        </footer>
+
+    </body>
+
+</html>

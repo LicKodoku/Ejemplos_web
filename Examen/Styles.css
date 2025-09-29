@@ -1,0 +1,482 @@
+/*--------------------------------*/
+/*--------   INDEX       ---------*/
+/*--------------------------------*/
+
+    /* Ajuste Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+    /*------------*/
+    /*---NAVBAR---*/
+    /*------------*/
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #408791;
+            padding: 2% 5%;
+            width: 100%;
+            border-bottom: 2px solid #000;
+        }
+
+        .navbar .logo {
+            height: 50px;
+            margin-top: -1%;
+        }
+
+        .navbar .links-pags {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin-left: -10%;
+        }
+
+        .navbar .links-pags li {
+            margin: 10px;
+        }
+
+        .navbar .links-pags li a {
+            color: #000;
+            text-decoration: none;
+            font-size: clamp(16px, 2vw, 22px);
+            padding: 5px 10px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .navbar .links-pags li a:hover {
+            color: #FEBD57;
+            background: rgba(200, 200, 200, 0.3);
+            transform: translateY(3px);
+            border-radius: 5px;
+        }
+
+        .navbar .links-user {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            width: 20%;
+        }
+
+        .navbar .icons .icon {
+            width: 40px;
+            margin-left: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar .icons .icon:hover {
+            transform: translateY(-5px);
+        }
+
+        /* NAVBAR RESPONSIVE */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar .links-pags {
+                flex-direction: column;
+                width: 100%;
+            }
+            .navbar .links-user {
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+
+    /*------------*/
+    /*---SLIDER---*/
+    /*------------*/
+
+    .SliderFondo{
+        width: 100%;
+        height: ;
+        color: #FFFFFF;
+        background-image: url(IMG/espacio.gif);
+        margin-top: -50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .slider-box {
+        width: 80vw;
+        margin: 50px auto 0;
+        overflow: hidden;
+    }
+   
+    .slider-box ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out;
+        height: 50vh; 
+    }
+
+    .slider-box li {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+
+    .imgtext {
+        position: absolute;
+        text-align: center;
+        padding: 0 40%;
+        top: 35%;
+        color: #FFFFFF;
+    }
+
+    .imgtext h2 {
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+
+    .slider-box img {
+        width: 100%;
+    }
+
+    @keyframes slide {
+        0% { margin-left: 0; }
+        20% { margin-left: 0; }
+
+        25% { margin-left: -100%; }
+        45% { margin-left: -100%; }
+
+        50% { margin-left: -200%; }
+        75% { margin-left: -200%; }
+
+        75% { margin-left: -300%; }
+        100% { margin-left: -300%; }
+    }
+
+
+
+    /*------------*/
+    /*---FOOTER---*/
+    /*------------*/
+        .footer {
+            background: #408791;
+            color: #000;
+            text-align: center;
+            padding: 2% 0;
+            margin-top: 2%;
+            width: 100%;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 2%;
+        }
+
+        .footer ul li {
+            display: inline;
+            margin: 0 2%;
+            font-size: clamp(14px, 2vw, 18px);
+        }
+
+        .footer ul li a {
+            color: #000;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+            color: #FEBD57;
+        }
+
+        /* Responsividad del footer */
+        @media (max-width: 768px) {
+            .footer ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer ul li {
+                margin: 2% 0;
+            }
+        }
+
+/*--------------------------------*/
+/*---  IDENTIDAD / ACERCA DE   ---*/
+/*--------------------------------*/
+
+    /*------------------*/
+    /* Sección de la Página */
+    /* ---------- */
+    .nosotros {
+        padding: 40px 0;
+        margin-bottom: 60px;
+    }
+
+    /* ---------- */
+    /* Subtítulos */
+    /* ---------- */
+    .subtitulo {
+        font-size: clamp(18px, 3vw, 24px);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;;
+    }
+
+    .subtitulo span {
+        background: #96c5cb;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+
+
+    /* ---------- */
+    /* Títulos */
+    /* ---------- */
+    .titulo {
+        font-size: clamp(20px, 5vw, 44px);
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 50px;
+        color: #fbc851;
+    }
+
+    /* ---------- */
+    /* Párrafos */
+    /* ---------- */
+    .nosotros p {
+        font-size: clamp(16px, 2vw, 22px);
+    }
+
+    /*--------------------*/
+    /* Imágenes de Equipo */
+    /*--------------------*/
+
+        img.img-fluid.rounded-circle {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+    /*---------*/
+    /* Galería */
+    /*---------*/
+        img.img-fluid.rounded {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        img.img-logo{
+            width: 20%;
+            height: auto;
+            margin-left: 4%;
+            margin-bottom: 5%;
+        }
+
+
+/*--------------------------------*/
+/*--------   PRODUCTOS   ---------*/
+/*--------------------------------*/
+    
+    /*-----------------------------*/
+    /*-----CONTENEDOR DE ITEMS-----*/
+    /*-----------------------------*/
+        .container-items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);  /* 4 columnas */
+            grid-template-rows: repeat(2, auto);    /* 2 filas */
+            gap: 20px;                              /* Espaciado entre elementos */
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;                          /* Centrar el contenido */
+        }
+
+        .item {
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .item:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+    /*---------------------------*/
+    /* Imágenes de los productos */
+    /*---------------------------*/
+        .item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .item:hover img {
+            transform: scale(1.1);
+        }
+
+    /*--------------------------*/
+    /* Información del producto */
+    /*--------------------------*/
+        .info-producto {
+            padding: 10px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .precio {
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 900;
+        }
+
+        .info-producto button {
+            border: none;
+            background: #000;
+            color: #fff;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .info-producto button:hover {
+            background: #333;
+        }
+
+    /*-----------------------------*/
+    /* ---- DISEÑO RESPONSIVE ---- */
+    /*-----------------------------*/
+
+        @media (max-width: 1400px) {
+            .container-items {
+                grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+                grid-template-rows: repeat(4, auto); /* 4 filas */
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .container-items {
+                grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+                grid-template-rows: repeat(6, auto); /* 6 filas */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container-items {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+                grid-template-rows: repeat(8, auto); /* 8 filas */
+            }
+
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            .header .nav-links {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-items {
+                grid-template-columns: repeat(1, 1fr); /* 1 columna */
+                grid-template-rows: auto;
+            }
+                .header .btn button {
+                width: 100%;
+            }
+        }
+
+
+/*--------------------------------*/
+/*--------   CONTACTO    ---------*/
+/*--------------------------------*/
+
+    .contacto-container {
+        text-align: center;
+        padding: 55px 20px;
+    }
+
+    .contacto-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .contacto-form {
+        width: 45%;
+        min-width: 300px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contacto-form label {
+        display: block;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .contacto-form input, 
+    .contacto-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contacto-form textarea {
+        height: 100px;
+    }
+
+    .contacto-form button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        background-color: #4B90C9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contacto-form button:hover {
+        background-color: #3a7ab5;
+    }
+
+    /* Información de contacto */
+    .contacto-info {
+        width: 45%;
+        min-width: 300px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contacto-info h2 {
+        margin-top: 0;
+    }
