@@ -1,0 +1,10 @@
+CREATE TABLE personaje(
+    id int auto_increment primary key not null,
+    nom_pj varchar(30) not null,
+    ap_pj varchar(20) not null,
+    autor varchar(30) not null,
+    serie_origen varchar(50) not null
+)engine=innodb;
+
+INSERT INTO personaje VALUES
+(null,'Naruto', 'Uzumaki', 'Masashi Kishimoto', 'Naruto');
